@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de Repetição</title>
+
+    <script>
+        
+        const nome = "Daniela"
+        const nota = 1
+        
+        const pessoa = 
+        {
+            nome: "Daniela", 
+            telefone: "(83)8670-7861", 
+            endereco: "ABC"
+        }
+      
+        console.log(pessoa)
+        console.log(pessoa.nome)
+        console.log(pessoa["nome"])
+        
+        for(let atributo in pessoa) {
+            console.log(atributo + " -> " + pessoa[atributo])
+        } 
+        
+        const carros = ["Gol", "Fusca", "Virtus", "Ka"]
+
+        for(let elemento of carros) {
+            console.log(elemento)
+        }        
+                         
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
