@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Multidimensionais (ou Matrizes)</title>
+
+    <script>
+
+        const nomes = [
+            "Orion",
+            "Maria",
+            "José",
+            "Antônio"
+        ]
+
+        const idades = [
+            18,
+            20,
+            24,
+            30,
+            36
+        ]
+
+        const notas = [
+            [5, 10, 9, 4],
+            [6, 7, 2, 10],
+            [8, 6, 3, 3]
+        ]
+
+        console.table(notas[1][2])
+
+        const pessoa = {nome: "Daniela", telefone: "(83) 98670-7861", endereco: "ABC"}
+
+        const pessoas = [
+            {nome: "Daniela", telefone: "(83) 98670-7861", endereco: "ABC"},
+            {nome: "Maria", telefone: "(83) 99988-7500", endereco: "DEF"},
+            {nome: "José", telefone: "(83) 98899-2517", endereco: "GHI"},
+            {nome: "Antônio", telefone: "(83) 99822-1902", endereco: "JKL"}
+        ]
+
+        console.table(pessoas)
+        console.log(notas[2][2])
+        console.table(pessoas[2].nome)
+        console.table(pessoas[2]["nome"])
+
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
