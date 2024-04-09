@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+
+    <script>
+
+        const carros = ["Gol", "Fusca", "Virtus", "Ka"]
+
+        console.log(carros)
+
+        console.table(carros)
+
+        console.log(carros[1])
+
+        console.log ("Usando estrutura for of: ")
+        for(let carro of carros) {
+            console.log(carro)
+        }
+
+        console.log ("Usando estrutura for: ")
+        for(let i = 0; i < 4; i++){
+            console.log(carros[i])
+        }
+
+        const anos = ["Daniela", 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022]
+
+        console.log(anos[2])
+        console.table(anos)
+
+        carros.push("Fiesta") // adiciona elementos ao final
+        console.table(carros)
+
+        carros.unshift("Palio") // adiciona elementos no início
+        console.table(carros)
+
+        carros.pop(carros) // retira elemento do final
+        console.table(carros)
+
+        const carroUnd = carros.shift(carros) // retira elemento do início
+        console.table(carros)
+        console.table(carroUnd)
+
+        carros.unshift("Palio")
+        carros.push("Fiesta")
+        console.table(carros)
+        
+        carros.splice(1, 2) // excluir itens
+        console.table(carros)
+
+        carros.splice(1, 0, 'Uno') // adicionar na posição que quero
+        console.table(carros)
+
+        carros.splice(1, 1, "Uno") // editar
+        console.table(carros)
+
+        carros.sort()
+        console.table(carros)
+ 
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
