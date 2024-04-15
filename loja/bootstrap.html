@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+    <h1>Bootstrap</h1>
+
+    <h2>Tabelas</h2>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <!-- ctrl + alt + seta para baixo (para duplicar texto) -->
+                    <th>Nome</th> 
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Daniela</td>
+                    <td>(88) 99999-9999</td>
+                    <td>ABC</td>
+                </tr>
+                <tr>
+                    <td>Antônio</td>
+                    <td>(88) 99999-5555</td>
+                    <td>ABC</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>(88) 99999-6666</td>
+                    <td>ABC</td>
+                </tr>
+                <tr>
+                    <td>José</td>
+                    <td>(88) 99999-7777</td>
+                    <td>ABC</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>(88) 99999-8888</td>
+                    <td>ABC</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <h2>Botões</h2>
+    
+    <input type="button" value="Salvar">
+
+    <button type="button">Salvar</button>
+
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
+
+    <h2>Accordion</h2>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              HTML
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              CSS
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Javascript
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <h2>Alertas</h2>
+    <div class="alert alert-danger">
+        Atenção! Obrigada pela atenção... Clique <a href="#" class="alert-link">aqui</a> para saber mais
+    </div>
+    <div class="alert alert-success">
+        Atenção! Obrigada pela atenção... Clique <a href="#" class="alert-link">aqui</a> para saber mais
+    </div>
+    <div class="alert alert-info">
+        Atenção! Obrigada pela atenção... Clique <a href="#" class="alert-link">aqui</a> para saber mais
+    </div>
+    <div class="alert alert-warning">
+        Atenção! Obrigada pela atenção... Clique <a href="#" class="alert-link">aqui</a> para saber mais
+    </div>
+    <div class="alert alert-secondary">
+        Atenção! Obrigada pela atenção... Clique <a href="#" class="alert-link">aqui</a> para saber mais
+    </div>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+    <h2>Cartões</h2>
+    <div class="card" style="width: 18rem;">
+        <img src="img/produto_2.webp" class="card-img-top" alt="Produto 2">
+        <div class="card-body">
+            <h5 class="card-title">Notebook lenovo</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum voluptate dolorem magni eaque, voluptatibus ipsam dolore laudantium repellat vero eius. Obcaecati voluptatum asperiores ducimus omnis dicta debitis eaque voluptate quo?</p>
+            <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+        
+        <div class="card border-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body text-danger">
+                <h5 class="card-title">Danger card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>   
+
+        </div>
+    
+
+
+</div>
+
+    </div>
+</body>
+</html>
